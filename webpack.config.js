@@ -12,15 +12,17 @@
 
 // llllllllllllllllllllllllllllllllllllllllllllllllllllllll
 
-// const path = require('path');
+const path = require('path');
 
 module.exports = {
+    mode: "development",
     entry: [
         'react-hot-loader/patch',
         './src/index.js',
     ],
-        output: {
+    output: {
         path: path.resolve(__dirname, 'build'),
+        publicPath: '/build/',
         filename: 'app.bundle.js'
     },
     module: {

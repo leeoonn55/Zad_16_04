@@ -26,8 +26,10 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={style.TodoApp}>
-                Tutaj pojawią się komponenty naszej aplikacji.               
+            <div className={style.TodoApp}>              
+                <Title title='Aplikacja' length={this.state.data.lenght} />  
+                
+                          
             </div>
         );
     }
